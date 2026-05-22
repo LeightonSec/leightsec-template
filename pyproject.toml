@@ -39,6 +39,7 @@ include = ["project_name*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [tool.coverage.run]
 omit = ["tests/*", "project_name/cli.py"]
