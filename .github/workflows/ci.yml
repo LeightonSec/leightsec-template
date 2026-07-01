@@ -61,7 +61,7 @@ jobs:
       # bumped deliberately. (The v0.1.0 tag predates the gate's hardening and
       # would propagate an old, toothless build forward — pin the SHA instead.)
       - name: Install security-gate (pinned)
-        run: pip install "git+https://github.com/LeightonSec/security-gate.git@531d618231269b490fd2800484aee7e0feebca38"
+        run: pip install "git+https://github.com/LeightonSec/security-gate.git@c52a8b56b3e164f9854c646bedb5d9e70446d98e"
 
       - name: Run security-gate
         # Real teeth: blocks on CRITICAL/HIGH. tests/ is excluded because test
